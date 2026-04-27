@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Estilo Escuro</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        height: 100vh;
+        background: linear-gradient(145deg, #1c1c1c, #2a2a2a);
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        background: #111;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 2px solid #333;
+    }
+
+    header h1{
+        letter-spacing: 2px;
+    }
+
+    nav{
+        margin-top: 10px;
+    }
+
+    nav a{
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        padding: 5px 10px;
+        border: 1px solid transparent;
+        transition: 0.3s;
+    }
+
+    nav a:hover{
+        border: 1px solid white;
+    }
+
+    main{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        background: #222;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.7);
+        text-align: center;
+    }
+
+    footer{
+        background: #111;
+        text-align: center;
+        padding: 10px;
+        border-top: 2px solid #333;
+    }
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>MEU SITE</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Rede</a>
+        <a href="#">Stop</a>
+    </nav>
+</header>
+
+<main>
+    <div class="card">
+        <h2>Bem-vindo</h2>
+        <p>Site com estilo escuro inspirado na imagem.</p>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 - Meu Site</p>
+</footer>

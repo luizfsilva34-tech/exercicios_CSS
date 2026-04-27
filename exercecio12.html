@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Layout com 3 Colunas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* MENU */
+    .menu {
+      background-color: blue;
+      color: black;
+      padding: 10px;
+      height: 60px;
+    }
+
+    /* CONTEÚDO */
+    .container {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      background-color: #eee;
+    }
+
+    .coluna {
+      width: 30%;
+      height: 300px;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .esquerda {
+      background-color: yellow;
+    }
+
+    .meio {
+      background-color: green;
+    }
+
+    .direita {
+      background: linear-gradient(to bottom, purple, violet);
+    }
+
+    /* RODAPÉ */
+    .rodape {
+      background-color: red;
+      color: black;
+      padding: 10px;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu">MENU</div>
+
+  <div class="container">
+    <div class="coluna esquerda">ESQUERDA</div>
+    <div class="coluna meio">MEIO</div>
+    <div class="coluna direita">DIREITA</div>
+  </div>
+
+  <div class="rodape">RODAPÉ</div>
+
+</body>
+</html>

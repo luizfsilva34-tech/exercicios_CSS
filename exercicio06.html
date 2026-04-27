@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Site de Exemplo</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    .container {
+      width: 1000px;
+      margin: 40px auto;
+      display: flex;
+      gap: 40px;
+    }
+
+    .col {
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .divider {
+      width: 1px;
+      background: #ccc;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .hex {
+      width: 100px;
+      height: 110px;
+      background: #111;
+      margin: 0 auto;
+      clip-path: polygon(
+        50% 0%,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0% 75%,
+        0% 25%
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .diamond {
+      width: 40px;
+      height: 40px;
+      margin: 20px auto;
+      background: black;
+      transform: rotate(45deg);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <hr>
+
+  <div class="container">
+
+    <!-- Coluna esquerda -->
+    <div class="col">
+      <h1>Site de Exemplo</h1>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit assumenda, maiores non similique praesentium voluptatibus inventore nulla neque exercitationem ad. Iste, sit nobis quaerat in vero maxime totam cum ab!
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium rem asperiores non corporis, accusantium nemo magni explicabo animi repudiandae eum enim officia, dicta deleniti amet odio? Magnam unde dolores dolorum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi eius inventore deserunt non, veniam saepe explicabo architecto minima, tenetur provident velit qui, hic enim dolorum optio blanditiis rerum vitae expedita.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, amet ea! Expedita fuga veritatis molestias alias eligendi vitae quasi, dolores minima optio possimus ea? Dicta vitae nesciunt accusamus dolorum explicabo.
+      </p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Coluna direita -->
+    <div class="col">
+
+      <div class="logo">
+        <div class="hex">RUBY</div>
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat, amet dolor labore aspernatur quos, enim fuga veritatis alias eum ad aut non veniam at ab minima, maiores quidem tenetur!
+      </p>
+
+      <div class="diamond"></div>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, amet ea! Expedita fuga veritatis molestias alias eligendi vitae quasi, dolores minima optio possimus ea? Dicta vitae nesciunt accusamus dolorum explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat, amet dolor labore aspernatur quos, enim fuga veritatis alias eum ad aut non veniam at ab minima, maiores quidem tenetur!
+      </p>
+
+    </div>
+
+  </div>
+
+  <hr>
+
+</body>
+</html>
