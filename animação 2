@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura</title>
+</head>
+<body>
+    <style>
+       
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5em;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* Seção de aventura */
+.aventura {
+    background: url('img/cinema-bg.jpg') center/cover no-repeat;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+}
+
+.aventura h2 {
+    font-size: 3em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.aventura::before {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 2em;
+}
+
+/* Grade de filmes */
+.filmes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+}
+
+.filme {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s;
+}
+
+.filme:hover {
+    transform: scale(1.05);
+}
+
+.filme img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.filme h3 {
+    color: #ffcc00;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.filme p {
+    font-size: 0.9em;
+    color: #ccc;
+    padding: 0 15px 20px;
+    text-align: justify;
+}
+    .btn {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffaa00;
+}
+
+   </style>
+
+          <!-- Cabeçalho -->
+    <header>
+        Cineflix
+    </header>
+
+    <!-- Seção de aventura -->
+    <section class="aventura">
+        <h2>animação</h2>
+    </section>
+
+    <!-- Grade de filmes -->
+   <section class="filmes">
+    <div class="filme">
+        <img src="img/Círculo de Fogo - Estreia 09 de Agosto - Trailer_ http___youtu_be_ZyH5XJ7K4cQ.jpg" alt="Círculo de Fogo: A Revolta">
+        <h3>Círculo de Fogo: A Revolta</h3>
+       <details>
+            <sumarry><ul>Charlie Hunnam: Raleigh Becket</ul> <ul>Idris Elba: Stacker Pentecost</ul> <ul>Rinko Kikuchi: Mako Mori</ul> <ul>Charlie Day: Dr. Newton Geiszler</ul> <ul>Burn Gorman: Dr. Hermann Gottlieb</ul> <ul>Ron Perlman: Hannibal Chau</ul> <ul>Max Martini: Herc Hansen</ul> <ul>Robert Kazinsky: Chuck Hansen</ul></sumarry>
+            <h2>Sinopse</h2>
+            <p><ul>Após a trágica invasão de Muzan Kibutsuji à mansão Ubuyashiki, o Corpo de Caçadores de Demônios é lançado em uma descida profunda rumo ao Castelo Infinito, a fortaleza dimensional dos Oni.</ul>
+                <ul>A Defesa: Para combatê-los, são criados os Jaegers, robôs gigantes controlados simultaneamente por dois pilotos conectados por uma ponte neural.</ul>
+                <ul>O Conflito: À beira da derrota, a última esperança recai sobre um ex-piloto traumatizado e uma aprendiz inexperiente, que devem comandar um Jaeger antigo e aparentemente obsoleto para encerrar a ameaça de uma vez por todas.</ul></p>
+                <p>2 horas e 11 minutos.</p>
+
+        </details>
+    </div>
+
+    <div class="filme">
+        <img src="img/percy jackson.jpg" alt="Percy Jackson e o Ladrão de Raios">
+        <h3>Percy Jackson e o Ladrão de Raios</h3>
+        <details>
+            <sumarry><ul>Logan Lerman: Percy Jackson</ul><ul> Alexandra Daddario: Annabeth Chase</ul> <ul>Brandon T. Jackson: Grover Underwood</ul> <ul>Jake Abel: Luke Castellan</ul> <ul>Pierce Brosnan: Quíron (Sr. Brunner)</ul><ul>Sean Bean: Zeus</ul> <ul>Uma Thurman: Medusa</ul> <ul>Kevin McKidd: Poseidon</ul> <ul>Rosario Dawson: Perséfone</ul></sumarry>
+            <h2>Sinopse</h2>
+            <p><ul>A Trama: Segue a mesma premissa básica do livro, mas com personagens mais velhos (adolescentes). Percy descobre sua herança divina após ser atacado por uma Fúria em uma excursão escolar.</ul>
+            <ul>O Conflito: Ele é levado ao Acampamento Meio-Sangue, onde descobre que Zeus deu um ultimato: se o raio não for devolvido em 14 dias, haverá guerra. Percy, Annabeth e Grover partem em uma jornada para resgatar a mãe de Percy no Mundo Inferior e provar sua inocência.</ul></p>
+            <p>1 hora e 58 minutos.</p>
+
+        </details>
+    </div>
+
+    <div class="filme">
+        <img src="img/Jumanji; Welcome To The Jungle.jpg"Jumanji">
+        <h3>Jumanji</h3>
+        <details>
+            <sumarry><ul>Dwayne Johnson: Dr. Smolder Bravestone</ul> <ul>Jack Black: Professor Sheldon "Shelly" Oberon</ul> <ul>Kevin Hart: Franklin "Mouse" Finbar</ul> <ul>Karen Gillan: Ruby Roundhouse</ul> <ul>Nick Jonas: Jefferson "Hidroavião" McDonough</ul></sumarry>
+            <h2>Sinopse</h2>
+            <p><ul>A Evolução: O jogo de tabuleiro se transforma em um videogame antigo para atrair novos jogadores.</ul>
+            <ul>Os Avatares: Quatro adolescentes em detenção escolar escolhem avatares e são sugados para dentro do mundo de Jumanji, assumindo corpos e habilidades completamente diferentes dos seus.</ul>
+            <ul>A Sobrevivência: Eles devem completar uma missão perigosa para salvar o reino e devolver a joia "Olho de Jaguar" ao seu lugar de origem, ou ficarão presos no jogo para sempre.</ul>
+            </p>
+            <p>1 hora e 59 minutos.</p>
+
+        </details>
